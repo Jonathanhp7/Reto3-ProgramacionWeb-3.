@@ -1,0 +1,277 @@
+/* Configuración general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0d1117;
+    color: #1c2430;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+
+/* Contenedor principal */
+.registro {
+    width: 100%;
+    max-width: 1150px;
+    min-height: 720px;
+    background: #ffffff;
+    border-radius: 24px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.35);
+}
+
+
+/* Panel izquierdo */
+.panel-info {
+    width: 42%;
+    background: linear-gradient(145deg, #0d47a1, #0969da);
+    color: white;
+    padding: 70px 55px;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-info {
+    width: 100%;
+}
+
+.etiqueta {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.panel-info .etiqueta {
+    color: #b9dcff;
+}
+
+.panel-info h1 {
+    font-size: 46px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.panel-info h1 span {
+    color: #a9d4ff;
+}
+
+.panel-info > .contenido-info > p {
+    color: #e1efff;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 45px;
+}
+
+
+/* Beneficios */
+.beneficios {
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.beneficio {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.numero {
+    font-size: 14px;
+    font-weight: bold;
+    color: #a9d4ff;
+}
+
+.beneficio p {
+    font-size: 15px;
+}
+
+
+/* Panel del formulario */
+.panel-formulario {
+    width: 58%;
+    background: #ffffff;
+    padding: 55px 65px;
+}
+
+.encabezado-formulario {
+    margin-bottom: 30px;
+}
+
+.encabezado-formulario .etiqueta {
+    color: #0969da;
+    margin-bottom: 8px;
+}
+
+.encabezado-formulario h2 {
+    font-size: 34px;
+    margin-bottom: 8px;
+    color: #161b22;
+}
+
+.encabezado-formulario p {
+    color: #667085;
+}
+
+
+/* Formulario */
+#formulario-registro {
+    width: 100%;
+}
+
+.fila {
+    display: flex;
+    gap: 20px;
+}
+
+.fila .grupo {
+    width: 50%;
+}
+
+.grupo {
+    margin-bottom: 20px;
+}
+
+.grupo label,
+.intereses legend {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #344054;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 13px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #1d2939;
+    background: #f8fafc;
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.2s;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+
+/* Campo seleccionado */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    background: #ffffff;
+    border-color: #0969da;
+    box-shadow: 0 0 0 3px rgba(9, 105, 218, 0.12);
+}
+
+
+/* Intereses */
+.intereses {
+    border: none;
+    margin-bottom: 25px;
+}
+
+.opciones {
+    display: flex;
+    gap: 12px;
+}
+
+.opcion {
+    flex: 1;
+    background: #f8fafc;
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.opcion:hover {
+    border-color: #0969da;
+    background: #f0f7ff;
+}
+
+.opcion input {
+    accent-color: #0969da;
+}
+
+
+/* Botón */
+.boton-registro {
+    width: 100%;
+    background: #0969da;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.boton-registro:hover {
+    background: #0757b5;
+    transform: translateY(-1px);
+}
+
+
+/* Diseño adaptable */
+@media (max-width: 850px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .registro {
+        flex-direction: column;
+    }
+
+    .panel-info,
+    .panel-formulario {
+        width: 100%;
+    }
+
+    .panel-info {
+        padding: 50px 35px;
+    }
+
+    .panel-formulario {
+        padding: 45px 35px;
+    }
+
+    .fila {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .fila .grupo {
+        width: 100%;
+    }
+
+    .opciones {
+        flex-direction: column;
+    }
+}

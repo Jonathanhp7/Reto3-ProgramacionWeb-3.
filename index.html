@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de la persona Usuaria</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <main class="registro">
+
+        <!-- Panel informativo -->
+        <section class="panel-info">
+            <div class="contenido-info">
+                <span class="etiqueta">CREA TU PERFIL</span>
+
+                <h1>
+                    Conecta con nuevas
+                    <span>posibilidades.</span>
+                </h1>
+
+                <p>
+                    Completa tu registro y forma parte de una comunidad
+                    donde tus intereses, ideas y experiencias cuentan.
+                </p>
+
+                <div class="beneficios">
+                    <div class="beneficio">
+                        <span class="numero">01</span>
+                        <p>Comparte tus intereses.</p>
+                    </div>
+
+                    <div class="beneficio">
+                        <span class="numero">02</span>
+                        <p>Descubre nuevas oportunidades.</p>
+                    </div>
+
+                    <div class="beneficio">
+                        <span class="numero">03</span>
+                        <p>Construye tu propio camino.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Formulario -->
+        <section class="panel-formulario">
+
+            <div class="encabezado-formulario">
+                <span class="etiqueta">BIENVENIDO</span>
+                <h2>Registro de la persona Usuaria</h2>
+                <p>Ingresa tus datos para crear tu perfil.</p>
+            </div>
+
+            <form id="formulario-registro">
+
+                <div class="fila">
+
+                    <div class="grupo">
+                        <label for="nombre">Nombre</label>
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Tu nombre"
+                            required
+                        >
+                    </div>
+
+                    <div class="grupo">
+                        <label for="apellido">Apellido</label>
+                        <input
+                            type="text"
+                            id="apellido"
+                            name="apellido"
+                            placeholder="Tu apellido"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+
+                <div class="grupo">
+                    <label for="correo">Correo electrónico</label>
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="nombre@correo.com"
+                        required
+                    >
+                </div>
+
+
+                <div class="grupo">
+                    <label for="contrasena">Contraseña</label>
+                    <input
+                        type="password"
+                        id="contrasena"
+                        name="contrasena"
+                        placeholder="Ingresa una contraseña"
+                        required
+                    >
+                </div>
+
+
+                <div class="grupo">
+                    <label for="descripcion">Cuéntanos sobre ti</label>
+                    <textarea
+                        id="descripcion"
+                        name="descripcion"
+                        rows="4"
+                        placeholder="Escribe una breve descripción sobre ti..."
+                    ></textarea>
+                </div>
+
+
+                <fieldset class="intereses">
+
+                    <legend>Selecciona tus intereses</legend>
+
+                    <div class="opciones">
+
+                        <label class="opcion">
+                            <input
+                                type="checkbox"
+                                name="intereses"
+                                value="tecnologia"
+                            >
+                            <span>Tecnología</span>
+                        </label>
+
+                        <label class="opcion">
+                            <input
+                                type="checkbox"
+                                name="intereses"
+                                value="arte"
+                            >
+                            <span>Arte</span>
+                        </label>
+
+                        <label class="opcion">
+                            <input
+                                type="checkbox"
+                                name="intereses"
+                                value="deporte"
+                            >
+                            <span>Deporte</span>
+                        </label>
+
+                    </div>
+
+                </fieldset>
+
+
+                <button type="submit" class="boton-registro">
+                    Registrarse
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
